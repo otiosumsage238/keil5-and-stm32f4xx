@@ -1,0 +1,4 @@
+interface:
+  display_name: "Keil5 + STM32F4xx"
+  short_description: "Rebuild and debug Keil MDK5 STM32F4xx course projects"
+  default_prompt: "Use $keil5-and-stm32f4xx to rebuild this Keil project and find out why the board does not respond."
