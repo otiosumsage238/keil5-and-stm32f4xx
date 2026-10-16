@@ -1,6 +1,6 @@
 ---
 name: keil5-and-stm32f4xx
-description: Build and debug Keil MDK5 (uVision / UV4) projects for STM32F4xx with the ST standard peripheral library, especially the XYD STM32F405VGT6 course board and the projects under F:\SHIT\workwork. Use when a Keil build fails, when code compiles but the board stays dead (blank screen, motor not moving, no serial output), when adding a peripheral driver to a course project, or when asked to create or rebuild such a project from the command line.
+description: Build and debug Keil MDK5 (uVision / UV4) projects for STM32F4xx with the ST standard peripheral library, especially the XYD STM32F405VGT6 course board and the projects under 工作根目录. Use when a Keil build fails, when code compiles but the board stays dead (blank screen, motor not moving, no serial output), when adding a peripheral driver to a course project, or when asked to create or rebuild such a project from the command line.
 metadata:
   short-description: Keil5 + STM32F4xx 课程板编译与排障
 ---
@@ -9,8 +9,8 @@ metadata:
 
 ## 环境事实
 
-- Keil：`F:\SHIT\keil5\UV4\UV4.exe`（μVision 5.28 + ARMCC V5.06），工程里 Device 选 `STM32F405VGTx`
-- 工程都在 `F:\SHIT\workwork\<作业名>\`，一个作业一个工程
+- Keil：`<KEIL>\UV4\UV4.exe`（μVision 5.28 + ARMCC V5.06），工程里 Device 选 `STM32F405VGTx`
+- 工程都在同一个「工作根目录」下的 `<作业名>\` 里，一个作业一个工程`r`n- 路径写法：文中 `工作根目录\` 指课程工程根目录、`<KEIL>` 指 Keil 安装目录，按自己的环境替换
 - 板子：XYD 智慧生活 / 智能锁开发板，**STM32F405VGT6（100 脚）**，HSE 25MHz → SYSCLK 168MHz。
   库里 `HSE_VALUE=25000000` + `PLL_M=25` 已经是对的，不用改（别把它当 8MHz 板子）
 - **命令行编译**（不用开 IDE）：
@@ -18,7 +18,7 @@ metadata:
   退出码 0 = 无错误无警告，日志会打印出来。启动 UV4 属于 GUI 程序，需要用户批准
 - 源码编码：老师的文件**混用 GBK 与 UTF-8**。自己新建/改写文件按 **GBK** 写（中文注释在 Keil 里才正常）；
   读老师的文件若 GBK 读出乱码就改用 UTF-8
-- 工程骨架有两代：扁平 `USER\`（早期）与 `APP\ + USER\inc|src`（后期，来自老师的 `南京信\综合\02_new`）。
+- 工程骨架有两代：扁平 `USER\`（早期）与 `APP\ + USER\inc|src`（后期，来自老师的 `<课程资料>\综合\02_new`）。
   新建工程时复制最近一版已编译通过的工程再改，比从头搭快也稳
 
 ## 排障主线（"编译过但硬件没反应"）

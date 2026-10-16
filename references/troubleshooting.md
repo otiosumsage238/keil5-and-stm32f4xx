@@ -17,7 +17,7 @@
 两个都要加进 Include Paths。注意：**修好路径后会立刻报下一个错**——工程里通常还缺
 `USER\stm32f4xx_conf.h`（`USE_STDPERIPH_DRIVER` 会去 include 它），从标准库模板复制一份即可。
 
-报错信息里出现的路径若像 `AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\...`，说明编译器
+报错信息里出现的路径若像 `%LOCALAPPDATA%\Arm\Packs\Keil\STM32F4xx_DFP\...`，说明编译器
 退而用了 Keil 设备包里的另一套头文件，那不是工程自带的库——根子还是 Include Path 缺项。
 
 ### 2. 芯片宏与实物不符

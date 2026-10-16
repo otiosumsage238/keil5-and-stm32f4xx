@@ -1,12 +1,12 @@
 # 用 Keil 的命令行批量编译（不用打开 IDE）
 #
-#   scripts/build_uv4.ps1 -Project "F:\SHIT\workwork\语音识别\PROJECT\voice.uvprojx" -Rebuild
+#   scripts/build_uv4.ps1 -Project "工作根目录\语音识别\PROJECT\voice.uvprojx" -Rebuild
 #
 # 退出码 0 表示无错误无警告；日志内容会打印出来。
 # 注意：这会启动 UV4.exe（GUI 程序），在受限环境下需要用户先批准。
 param(
     [Parameter(Mandatory = $true)][string]$Project,
-    [string]$Keil = 'F:\SHIT\keil5\UV4\UV4.exe',
+    [string]$Keil = '<KEIL>\UV4\UV4.exe',
     [switch]$Rebuild,
     [int]$TimeoutSec = 300
 )
