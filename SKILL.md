@@ -16,6 +16,7 @@ metadata:
 - **命令行编译**（不用开 IDE）：
   `scripts/build_uv4.ps1 -Project <工程.uvprojx> [-Rebuild]`
   退出码 0 = 无错误无警告，日志会打印出来。启动 UV4 属于 GUI 程序，需要用户批准
+- 本机真实路径（工作根目录、Keil 安装目录、参考工程位置）见同目录 `LOCAL_PATHS.md`（该文件不随仓库发布）
 - 源码编码：老师的文件**混用 GBK 与 UTF-8**。自己新建/改写文件按 **GBK** 写（中文注释在 Keil 里才正常）；
   读老师的文件若 GBK 读出乱码就改用 UTF-8
 - 工程骨架有两代：扁平 `USER\`（早期）与 `APP\ + USER\inc|src`（后期，来自老师的 `<课程资料>\综合\02_new`）。
