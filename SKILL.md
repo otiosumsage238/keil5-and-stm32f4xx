@@ -1,6 +1,6 @@
 ---
 name: keil5-and-stm32f4xx
-description: Build and debug Keil MDK5 (uVision / UV4) projects for STM32F4xx with the ST standard peripheral library, especially the XYD STM32F405VGT6 course board and the projects under 工作根目录. Use when a Keil build fails, when code compiles but the board stays dead (blank screen, motor not moving, no serial output), when adding a peripheral driver to a course project, or when asked to create or rebuild such a project from the command line.
+description: Build and debug Keil MDK5 (uVision / UV4) projects for STM32F4xx with the ST standard peripheral library, especially the XYD STM32F405VGT6 course board and the local course project tree. Use when a Keil build fails, when code compiles but the board stays dead (blank screen, motor not moving, no serial output), when adding a peripheral driver to a course project, or when asked to create or rebuild such a project from the command line.
 metadata:
   short-description: Keil5 + STM32F4xx 课程板编译与排障
 ---
